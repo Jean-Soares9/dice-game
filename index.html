@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Dados - 2 Jogadores</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .dado-container {
+            display: inline-block;
+            margin: 20px;
+        }
+
+        .dado img {
+            width: 100px;
+            height: 100px;
+        }
+
+        .r {
+            font-size: 24px;
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Jogo de Dados - 2 Jogadores</h1>
+    <div>
+        <div class="dado-container">
+            <h3>Jogador 1</h3>
+            <div id="dado1" class="dado">
+                <img src="img/1.png" alt="Dado 1">
+            </div>
+        </div>
+        <div class="dado-container">
+            <h3>Jogador 2</h3>
+            <div id="dado2" class="dado">
+                <img src="img/1.png" alt="Dado 2">
+            </div>
+        </div>
+    </div>
+    <br>
+    <button onclick="lancar()">Lançar Dados</button>
+
+    <label for="text" id="resultado"></label>
+    <script src="app.js"></script>
+</body>
+</html>
